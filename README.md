@@ -23,4 +23,4 @@ Method: `POST`
 
 ### Parameters
 * `speaker` - Speaker, now available only Archer
-* `text` - The text you want to synthesize, e. g. "привет". 300 characters limitation. If you're going to add stress to the word, use "+" before the stressed vowel, e. g. "пр+ивет".
+* `text` - The text you want to synthesize, e. g. "привет". 300 characters limitation. If you're going to add stress to the word, use "+" before the stressed vowel, e. g. "пр+ивет". The numbers need to be written as words, e. g. “10” - “десять”.
