@@ -1,6 +1,6 @@
 # Vera Voice API
 
-Here is API documentation for TTS service from veravoice.ai
+Here is API documentation for TTS service from [veravoice.ai](https://veravoice.ai/).
 First of all, you need to pass registration. It's not open for everybody, so you need to write an email to apirequest@veravoice.ai and describe your use case.
 
 After you receive username and password, you need to get auth-token:
