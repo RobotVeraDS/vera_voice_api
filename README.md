@@ -24,4 +24,9 @@ Method: `POST`
 ### Parameters
 * `speaker` - Speaker, now available only Archer
 * `text` - The text you want to synthesize, e. g. "привет". 300 characters limitation. If you're going to add stress to the word, use "+" before the stressed vowel, e. g. "пр+ивет". The numbers need to be written as words, e. g. “10” - “десять”.
-* `get_samples` - boolean, default `false`, return array of samples of audio in headers, 1000 samples per second. You can get it like this: `req.headers["samples"]`
+* `get_samples` - boolean, default `false`, return array of samples of audio and audio in base64 in json response, 1000 samples per second. You can get it like this: `req.json()["array_of_samples"]`, and get audio bytes like this:
+`
+import base64
+aduio_bytes = base64.b64decode(req.json()["audio"])
+
+`
