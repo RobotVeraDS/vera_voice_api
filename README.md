@@ -27,6 +27,6 @@ Method: `POST`
 * `frame_rate` - integer, valid values are from 0 to 1000, if you pass this parameter, it returns the array of samples of audio (passed value of samples per second) and audio in base64 in JSON-response. You can get it like this: `req.json()["array_of_samples"]`, and get audio bytes like this:
 ```python
 import base64
-aduio_bytes = base64.b64decode(req.json()["audio"])
+audio_bytes = base64.b64decode(req.json()["audio"])
 
 ```
