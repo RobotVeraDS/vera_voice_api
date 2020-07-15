@@ -31,4 +31,4 @@ audio_bytes = base64.b64decode(req.json()["audio"])
 
 ```
 
-Your requests' statistics available at this [endpoint](https://api.veravoice.ai/api/requests/).
+Your requests' statistics available at this https://api.veravoice.ai/api/requests/.
