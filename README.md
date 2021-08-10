@@ -6,6 +6,8 @@ First of all, you need to pass registration. It's not open for everybody, so you
 After you receive username and password, you need to get auth-token:
 ```python
 import requests
+
+
 login_url = "https://api.veravoice.ai/api-token-auth/"
 req = requests.post(login_url, data={"username": "you_username", "password": "your_password"})
 token = req.json()["token"]
@@ -13,9 +15,11 @@ token = req.json()["token"]
 
 Then you can call TTS API like this:
 ```python
-headers={"Authorization": "Token " + token}
-data = {"speaker": "archer", "text": "Your Text"}
-req = requests.post("https://api.veravoice.ai/api/tts", data=data, headers=headers)
+data = {
+  "speaker": "archer", 
+  "text": "Your Text"
+ }
+req = requests.post("https://api.veravoice.ai/api/tts", data=data, headers={"Authorization": f"Token {token}"})
 ```
 
 API endpoint: `https://api.veravoice.ai/api/tts`
