@@ -19,7 +19,8 @@ data = {
   "speaker": "archer", 
   "text": "Your Text"
  }
-req = requests.post("https://api.veravoice.ai/api/tts", data=data, headers={"Authorization": f"Token {token}"})
+req = requests.post("https://api.veravoice.ai/api/tts", 
+                    data=data, headers={"Authorization": f"Token {token}"})
 ```
 
 API endpoint: `https://api.veravoice.ai/api/tts`
